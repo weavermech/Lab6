@@ -12,6 +12,10 @@ int main(int argc, char* argv[])
 	s3.Print();
 	s3[11]=s3[12]=s3[13]=s3[14]=' ';
 	cout << s3 << endl;
-	FnameC f1("tester");
+	FileNameC f1(1, "dave.txt");
+
+	std::cout << "Testing result: " << f1.isValid() << std::endl;
+
+	f1.Print();
 	return 0;
 }

@@ -99,8 +99,7 @@ StringC::operator+=(const StringC & s)
 
 /*--------------------------------------------------------------------------*/
 
-char & 
-StringC::operator[](const int i)
+char &StringC::operator[](const int i)
 {
   if ((i<0)||(i>=(size-1))) {
     std::cerr << "Error : StringC=" << ps << "   Index out of range : " << i << std::endl;
@@ -111,8 +110,7 @@ StringC::operator[](const int i)
 
 /*--------------------------------------------------------------------------*/
 
-const char & 
-StringC::operator[](const int i) const
+const char &StringC::operator[](const int i) const
 {
   if ((i<0)||(i>=(size-1))) {
     std::cerr << "Error : StringC=" << ps << "   Index out of range : " << i << std::endl;
@@ -124,8 +122,7 @@ StringC::operator[](const int i) const
 
 /*--------------------------------------------------------------------------*/
 
-int 
-StringC::Length()
+int StringC::Length()
 {
   return strlen(ps);
 }
